@@ -38,9 +38,9 @@ If you want to build the dependencies yourself, it is highly recommended that yo
 4. Open `UTM.xcodeproj` and select your signing certificate
 5. Build and deploy from Xcode
 
-### Running on iOS 13.3.1+
+### Running on iOS 13.3.1
 
-Since iOS 13.3.1, it [appears Apple has stopped allowing free developer profiles to sign dylibs][2]. As a workaround, you can either spend $99/year on an Apple developer program or < $10/year on some third party iOS signing certificate (you can search for it online, do not ask for help with this).
+In iOS 13.3.1, a bug is present which [doesn't let free developer profiles sign dylibs][2]. This issue has been fixed in iOS 13.4, which you can upgrade to by either enrolling in [Apple's Beta software program][5] or [installing an iOS Beta profile][6]. Alternatively, if you don't want to upgrade to iOS 13.4, you can either spend $99/year on an Apple developer program or < $10/year on some third party iOS signing certificate (you can search for it online, do not ask for help with this).
 
 ## Signing Release
 
@@ -74,3 +74,5 @@ UTM is distributed under the permissive Apache 2.0 license. However, it uses sev
   [2]: https://github.com/flutter/flutter/issues/49504#issuecomment-581090664
   [3]: https://github.com/utmapp/UTM/releases
   [4]: screen.png
+  [5]: https://beta.apple.com/sp/betaprogram/
+  [6]: https://betaprofiles.com/
